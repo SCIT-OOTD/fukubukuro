@@ -123,13 +123,15 @@ pip install easy-dwpose --no-dependencies
 uvicorn app.main:app --host 0.0.0.0 --port 8000
 
 # 2. Gemini AI 서버 (새 터미널 열기 권장)
-conda activate ootd-ai
+conda create -n ootd-api python=3.10
+conda activate ootd-api
 cd AI/server/gemini
 pip install -r requirements.txt
 uvicorn app.main:app --host 0.0.0.0 --port 8002
 
 # 3. Veo 3.1 서버 (새 터미널 열기 권장)
-conda activate ootd-ai
+conda create -n ootd-veo python=3.10
+conda activate ootd-veo
 cd AI/server/veo3.1
 pip install -r requirements.txt
 uvicorn app.main:app --host 0.0.0.0 --port 8001
