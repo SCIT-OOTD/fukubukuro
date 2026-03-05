@@ -1,0 +1,13 @@
+### Personal Files ###
+.agent
+.idea
+.vscode
+.windsurf
+
+### Sub-repositories (독립 리포지토리) ###
+.github/
+AI/
+backend/
+crawler/
+frontend/
+github-practice/
